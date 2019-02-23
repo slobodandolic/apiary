@@ -13,14 +13,21 @@ Slobodan Dolic's API.
     + Header
             
             Authorization: Basic dXNlcjpwYXNzd29yZA==
+            x-api-version: 1.0
 
 + Response 200 (application/json)
 
-        [
+    + Header
+    
+            cache-control: max-age=600
+    
+    + Body
+    
             {
-                "name": "Slobodan Dolic",
-                "from": "Serbia, Europe",
-                "born": "1989-08-28",
-                "cv": "https://www.linkedin.com/in/slobodandolic/"
+                {
+                    "name": "Slobodan Dolic",
+                    "from": "Serbia, Europe",
+                    "born": "1989-08-28",
+                    "cv": "https://www.linkedin.com/in/slobodandolic/"
+                }
             }
-        ]
