@@ -1,0 +1,26 @@
+FORMAT: 1A
+HOST: http://private-cc7bf-slobodandolic.apiary-mock.com
+# slobodandolic 
+
+Slobodan Dolic's API.
+
+## Slobodan Dolic [/bio]
+
+### Slobodan Dolic's CV [GET]
+
++ Request
+
+    + Header
+            
+            Authorization: Basic dXNlcjpwYXNzd29yZA==
+
++ Response 200 (application/json)
+
+        [
+            {
+                "name": "Slobodan Dolic",
+                "from": "Serbia, Europe",
+                "born": "1989-08-28",
+                "cv": "https://www.linkedin.com/in/slobodandolic/"
+            }
+        ]
